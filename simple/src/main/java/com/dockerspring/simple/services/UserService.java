@@ -16,7 +16,7 @@ public class UserService {
     public String findUserById(Integer id) {
         Optional<User> user = usersRepository.findById(id);
         if(user.isPresent()){
-            return "UserName for the given id is" + user.get().getUsername();
+            return "name for the given id is" + user.get().getUsername();
         }
         else{
             return "No user with given id ";
