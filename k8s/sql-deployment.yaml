@@ -16,7 +16,7 @@ spec:
     spec:
       volumes:
         - name: db-claim
-          persistentNameClaim:
+          persistentVolumeClaim:
             claimName: persistant-volume-claim
       containers:
         - name: my-sql
