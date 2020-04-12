@@ -27,7 +27,7 @@ script:
   - mvn clean package
 
 after_success:
-  - docker build -t anushaunni/springboot:latest -t anushaunni/springboot:$SHA ./simple
+  - docker build -t anushaunni/springbootwithsql:latest -t anushaunni/springbootwithsql:$SHA ./simple
   - docker push anushaunni/springbootwithsql:latest
   - docker push anushaunni/springbootwithsql:$SHA
 
