@@ -8,4 +8,4 @@ spec:
     app: sql
   ports:
     - port: 3306
-      targetPort: 3306
+  clusterIP: None

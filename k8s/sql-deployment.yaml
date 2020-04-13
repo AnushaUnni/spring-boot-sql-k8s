@@ -45,6 +45,7 @@ spec:
           imagePullPolicy: Always
           ports:
             - containerPort: 3306
+              name: my-sql
           volumeMounts:
             - name: db-claim
               mountPath: /var/lib/mysql
