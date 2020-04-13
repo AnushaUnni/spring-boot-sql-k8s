@@ -28,10 +28,7 @@ spec:
                   name: mysql-root-pass
                   key: password
             - name: MYSQL_DATABASE
-              valueFrom:
-                secretKeyRef:
-                  name: mysql-db-url
-                  key: database
+              value: 'jdbc:mysql://34.69.230.8:3306/auth?useSSL=false'
             - name: MYSQL_USER
               valueFrom:
                 secretKeyRef:

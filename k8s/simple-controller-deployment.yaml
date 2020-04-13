@@ -32,7 +32,4 @@ spec:
                   name: mysql-user-pass
                   key: password
             - name: SPRING_DATASOURCE_URL
-              valueFrom:
-                secretKeyRef:
-                  name: mysql-db-url
-                  key: url
+              value: 'jdbc:mysql://34.69.230.8:3306/auth?useSSL=false'
